@@ -62,6 +62,7 @@ def streamlit_args(port: int) -> list[str]:
         "run", str(app),
         "--server.address=127.0.0.1",
         f"--server.port={int(port)}",
+        "--global.developmentMode=false",
         "--server.headless=true",
         "--server.fileWatcherType=none",
         "--browser.gatherUsageStats=false",

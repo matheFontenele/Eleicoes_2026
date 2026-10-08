@@ -11,6 +11,7 @@ def test_local_runtime_arguments_and_resource_root():
     assert args[0:2] == ["run", str(root / "dashboard.py")]
     assert "--server.address=127.0.0.1" in args
     assert "--server.port=8765" in args
+    assert "--global.developmentMode=false" in args
     assert launcher.health_url(8765) == "http://127.0.0.1:8765/_stcore/health"
 
 
