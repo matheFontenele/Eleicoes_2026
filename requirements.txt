@@ -1,0 +1,8 @@
+pandas>=2.2,<4
+requests>=2.32,<3
+folium>=0.17,<1
+duckdb>=1.1,<2
+pyarrow>=17,<25
+streamlit>=1.39,<2
+streamlit-folium>=0.25,<1
+plotly>=5.20,<7
